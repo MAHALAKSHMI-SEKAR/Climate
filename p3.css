@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #87CEEB, #f0f0f0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; /* Ensure body covers the full viewport height */
+}
+
+.header {
+    text-align: center;
+    height: 60px; /* Slightly increased height for better alignment */
+    padding-top: 10px;
+}
+
+.search-bar {
+    height: 35px;
+    width: 300px;
+    border: 2px solid transparent; /* Border transition effect */
+    border-radius: 20px;
+    color: black;
+    padding-left: 10px; /* Added padding for better input spacing */
+    font-size: 15px;
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.searchbtn {
+    background-color: white;
+    color: black;
+    width: 85px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #333; /* Adjusted border color */
+    border-radius: 20px; /* More consistent border-radius with search-bar */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition effects */
+}
+
+.search-bar:hover {
+    border-color: black; /* Changed to border-color for smoother transition */
+}
+
+.searchbtn:hover {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.weather-image {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between image and temperature */
+    display: block; /* Ensure image is displayed as block for centering */
+}
+
+
+.temp {
+    font-size: 80px;
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+.place {
+    font-size: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Adjusted gap for better alignment */
+    padding: 20px; /* Added padding for better spacing */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the footer */
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.footer-left {
+    gap: 15px;
+}
+
+.footer-right {
+    gap: 10px;
+}
+
+.humidity, .wind-speed {
+    font-size: 40px;
+}
+
+.err {
+    display: none; /* Hidden by default, shown when needed */
+    color: red;
+    padding: 10px; /* Add padding for better spacing */
+    border-radius: 5px; /* Rounded corners */
+    position: absolute; /* Positioning relative to the nearest positioned ancestor */
+    top: 40px; /* Adjust as needed to fit the layout */
+    left: 40%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally with respect to the element’s width */
+    width: auto; /* Adjust width as needed */
+    max-width: 300px; /* Ensure it doesn’t get too wide */
+    text-align: center; /* Center text inside the error message */
+    font-size: 14px; /* Adjust font size for readability */
+}
+
+
